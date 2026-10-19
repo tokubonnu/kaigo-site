@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>老人ホームの費用、月いくらまで払える？｜年金と貯金から計算</title>
+<meta name="description" content="年金などの手取りと「介護に使えるお金」を入力すると、老人ホームなどの費用に毎月いくらまで出せるかを計算できます。5年・10年・15年で比較でき、見積もりがなくても使えます。入力した金額は保存されません。">
+<!-- meta:auto start -->
+<link rel="canonical" href="https://kaigo.bibon.net/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="施設のお金を整理する">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://kaigo.bibon.net/">
+<meta property="og:title" content="老人ホームの費用、月いくらまで払える？｜年金と貯金から計算">
+<meta property="og:description" content="年金などの手取りと「介護に使えるお金」を入力すると、老人ホームなどの費用に毎月いくらまで出せるかを計算できます。5年・10年・15年で比較でき、見積もりがなくても使えます。入力した金額は保存されません。">
+<meta property="og:image" content="https://kaigo.bibon.net/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"施設のお金を整理する","url":"https://kaigo.bibon.net/","inLanguage":"ja"}</script>
+<!-- meta:auto end -->
+<link rel="stylesheet" href="src/ui/style.css">
+</head>
+<body>
+<!-- icons:auto start --><svg class="sprite" aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden"><symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M6 7l9-3.5 1.6 3.5M21 11h-4a2 2 0 0 0 0 4h4"/></symbol><symbol id="i-coins" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="2.6"/><path d="M5 6v4c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6M5 10v4c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6v-4M5 14v4c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6v-4"/></symbol><symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4M8 14h2M14 14h2M8 17.5h2"/></symbol><symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol><symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3M12 15v2"/></symbol><symbol id="i-pencil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1-4.5L15.5 5l3.5 3.5L8.5 19z"/><path d="M13.5 7l3.5 3.5"/></symbol><symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M7 16.5V12M12 16.5V7.5M17 16.5V10"/></symbol><symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M11 21v-3h2v3"/></symbol><symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="3.5"/><path d="M8 12.2l2.8 2.8L16.5 9"/></symbol><symbol id="i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6h10M10 12h10M10 18h10M4 6l1.2 1.2L7.5 5M4 12l1.2 1.2L7.5 11M4 18l1.2 1.2L7.5 17"/></symbol><symbol id="i-compare" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M8 20h8M5 7h14M5 7l-2.6 6.5a2.8 2.8 0 0 0 5.2 0zM19 7l-2.6 6.5a2.8 2.8 0 0 0 5.2 0z"/></symbol><symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.4-7-11.8a7 7 0 0 1 14 0C19 14.6 12 21 12 21z"/><circle cx="12" cy="9.2" r="2.5"/></symbol><symbol id="i-people" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3.5 20c0-3.2 2.5-5.6 5.5-5.6s5.5 2.4 5.5 5.6"/><circle cx="17" cy="9" r="2.4"/><path d="M15.8 14.3c2.6.2 4.7 2.3 4.7 5.2"/></symbol><symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5l9-7.5 9 7.5"/><path d="M5.5 9.8V20h13V9.8M10 20v-5.5h4V20"/></symbol><symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5c3-1.2 6-1.2 8 .8 2-2 5-2 8-.8V19c-3-1.2-6-1.2-8 .8-2-2-5-2-8-.8z"/><path d="M12 6.3V19.8"/></symbol><symbol id="i-yen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.6 7.2L12 12l3.4-4.8M12 12v5.5M9 12.8h6M9 15.2h6"/></symbol><symbol id="i-question" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.6 2.6 0 0 1 5 .9c0 1.8-2.5 2.1-2.5 4M12 17.2v.1"/></symbol></svg><!-- icons:auto end -->
+<div class="app" id="app">
+  <header class="masthead">
+    <a class="brand" href="./" aria-label="施設のお金を整理する トップへ">
+      <span class="brand-mark" aria-hidden="true"><svg class="ic"><use href="#i-home"/></svg></span>
+      <span class="brand-name">施設のお金を整理する<span class="brand-caption">施設の費用と、<span class="nw">家での暮らしのお金を考える</span></span></span>
+    </a>
+    <nav class="gnav" aria-label="サイトの中">
+      <a href="#h-hh">月の予算を計算</a><a href="kawasaki.html">川崎市の施設を探す</a><a href="#h-ask">見学で聞くこと</a><a href="#h-words">施設の種類</a>
+    </nav>
+  </header>
+
+  <section class="hero" aria-labelledby="h-top">
+    <div class="hero-text">
+      <h1 id="h-top">施設の費用に、<wbr>毎月いくらまで<wbr>出せる？</h1>
+      <p class="lead">本人の年金などの手取りと、<span class="nw">介護に使えるお金</span>。まずは<strong>この2つ</strong>を入れるだけで、施設の費用に毎月いくらまで出せるかの目安が分かります。見積もりがまだなくても計算できます。</p>
+    </div>
+    <div class="hero-art"><img src="src/img/hero-sodan.webp" width="960" height="494" alt="テーブルでノートを広げて相談する母と娘" fetchpriority="high"></div>
+    <a class="kw-badge" href="kawasaki.html">
+      <svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>
+      <span class="kwb-t"><span class="kwb-k"><span class="nw">川崎市で</span><span class="nw">施設を探している方へ</span></span><strong><span class="kwb-p">予算で入れる施設を、</span><span class="kwb-p">区ごとに探せます</span></strong></span>
+      <span class="arr" aria-hidden="true">›</span>
+    </a>
+    <ul class="points" aria-label="このページの特長">
+      <li><span class="pt-icon" aria-hidden="true"><svg class="ic"><use href="#i-pencil"/></svg></span><strong>入力はまず2つだけ</strong></li>
+      <li><span class="pt-icon" aria-hidden="true"><svg class="ic"><use href="#i-doc"/></svg></span><strong>施設の見積もりは不要</strong></li>
+      <li><span class="pt-icon" aria-hidden="true"><svg class="ic"><use href="#i-lock"/></svg></span><strong>名前・連絡先の入力なし</strong></li>
+    </ul>
+    <p class="hero-cta"><a class="btn-cta big" href="#h-hh">月の予算を計算する<span class="arr" aria-hidden="true">›</span></a></p>
+  </section>
+
+  <section class="qs band" aria-labelledby="h-qs">
+    <h2 id="h-qs">知りたいことから選べます</h2>
+    <ul class="qlist">
+      <li><a href="#h-hh"><svg class="ic" aria-hidden="true"><use href="#i-question"/></svg><span>施設の費用に、毎月いくらまで<span class="nw">出せる？</span></span></a></li>
+      <li><a href="chokin-nannen.html"><svg class="ic" aria-hidden="true"><use href="#i-question"/></svg><span>今の貯金で、何年分の<span class="nw">費用を払える？</span></span></a></li>
+      <li><a href="nokoru-kazoku.html"><svg class="ic" aria-hidden="true"><use href="#i-question"/></svg><span>夫婦の一人が施設に入ったら、<span class="nw">家の生活費は？</span></span></a></li>
+      <li><a href="#h-ask"><svg class="ic" aria-hidden="true"><use href="#i-question"/></svg><span>見学では、<span class="nw">何を聞けばいい？</span></span></a></li>
+    </ul>
+  </section>
+
+  <section class="flow-sec" aria-labelledby="h-flow">
+    <h2 id="h-flow">使い方</h2>
+    <ol class="flow3">
+      <li><span class="fnum">1</span><svg class="ic" aria-hidden="true"><use href="#i-pencil"/></svg><span class="ft"><strong>金額を入れる</strong></span></li>
+      <li><span class="fnum">2</span><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg><span class="ft"><strong>月の予算を見る</strong></span></li>
+      <li><span class="fnum">3</span><svg class="ic" aria-hidden="true"><use href="#i-building"/></svg><span class="ft"><strong>施設の情報を確認する</strong></span></li>
+    </ol>
+  </section>
+
+  <main>
+    <section class="step main-tool" aria-labelledby="h-hh">
+      <div class="tool-head">
+        <h2 id="h-hh"><span class="num">1</span>まず、金額を入れます</h2>
+        <ol class="stepper" data-at="1" aria-label="進み具合">
+          <li data-s="1"><span>1</span>金額を入れる</li>
+          <li data-s="2"><span>2</span>結果を見る</li>
+          <li data-s="3"><span>3</span>施設を探す</li>
+        </ol>
+      </div>
+      <p class="lockline"><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg><span>入力した金額は保存されず、外部にも送られません。</span></p>
+      <div class="fields">
+        <div class="field fcard">
+          <span class="ficon" aria-hidden="true"><svg class="ic"><use href="#i-wallet"/></svg></span>
+          <div class="ftext"><label for="hh-self">本人の毎月の手取り（年金など）</label><p class="sub">年金が2か月分まとめて振り込まれる場合は、<strong>1か月分</strong>にして入力してください。</p></div>
+          <div class="finput"><input id="hh-self" data-hh="incomeSelf" data-unit="yen" type="text" inputmode="numeric" autocomplete="off" placeholder="例：150000"><span class="unit">円／月</span><p class="err" id="hh-self-err" role="alert"></p></div>
+        </div>
+        <div class="field fcard">
+          <span class="ficon" aria-hidden="true"><svg class="ic"><use href="#i-coins"/></svg></span>
+          <div class="ftext"><label for="hh-funds">介護に使えるお金</label></div>
+          <div class="finput"><input id="hh-funds" data-hh="funds" data-unit="man" type="text" inputmode="decimal" autocomplete="off" placeholder="例：800"><span class="unit">万円</span><p class="err" id="hh-funds-err" role="alert"></p></div>
+        </div>
+        <div class="fcard mode" role="radiogroup" aria-labelledby="lg-period">
+          <span class="ficon" aria-hidden="true"><svg class="ic"><use href="#i-cal"/></svg></span>
+          <div class="ftext"><p class="flabel" id="lg-period">何年分、払えるようにしますか？</p></div>
+          <div class="seg">
+            <label><input type="radio" name="hh-period" value="5"> 5年</label>
+            <label><input type="radio" name="hh-period" value="10" checked> 10年</label>
+            <label><input type="radio" name="hh-period" value="15"> 15年</label>
+          </div>
+        </div>
+      </div>
+      <details class="more" id="more-box">
+        <summary><span class="more-head"><span class="more-t">あれば、こちらの金額も入れられます</span><span class="more-items"><span>施設以外にかかるお金</span><span>手元に残しておくお金</span><span>家で暮らす家族の生活費</span><span>入居時に払うお金</span></span></span></summary>
+        <p class="hint">分かる金額だけで大丈夫です。空欄でも計算できます。</p>
+        <div class="fields">
+          <div class="field fcard">
+            <div class="ftext"><label for="hh-other">施設以外にかかるお金（月）</label><p class="sub">病院代・薬代・おむつ代・日用品・こづかいなど。分からなければ空欄で構いません。</p></div>
+            <div class="finput"><input id="hh-other" data-hh="otherMonthly" data-unit="yen" type="text" inputmode="numeric" autocomplete="off" placeholder="分からなければ空欄"><span class="unit">円／月</span><p class="err" id="hh-other-err" role="alert"></p></div>
+          </div>
+          <div class="field fcard">
+            <div class="ftext"><label for="hh-reserve">手元に残しておくお金</label><p class="sub">急な入院や家の修理に備えて<strong>残す分</strong>です。</p><p class="sub">介護に使えるお金から一度だけ引きます。分からなければ空欄で。</p></div>
+            <div class="finput"><input id="hh-reserve" data-hh="reserve" data-unit="man" type="text" inputmode="decimal" autocomplete="off" placeholder="分からなければ空欄"><span class="unit">万円</span><p class="err" id="hh-reserve-err" role="alert"></p></div>
+          </div>
+          <div class="field fcard">
+            <div class="ftext"><label for="hh-living">家で暮らす家族の生活費（月）</label><p class="sub">家で暮らす家族の生活費を先に確保し、施設に使える額を出します。家に残る人がいなければ空欄で。</p></div>
+            <div class="finput"><input id="hh-living" data-hh="spouseLiving" data-unit="yen" type="text" inputmode="numeric" autocomplete="off" placeholder="いなければ空欄"><span class="unit">円／月</span><p class="err" id="hh-living-err" role="alert"></p></div>
+          </div>
+          <div class="field fcard">
+            <div class="ftext"><label for="hh-spouse">家で暮らす家族の手取り（月）</label><p class="sub">上の生活費も入れた場合だけ、計算に加えます。</p></div>
+            <div class="finput"><input id="hh-spouse" data-hh="incomeSpouse" data-unit="yen" type="text" inputmode="numeric" autocomplete="off" placeholder="いなければ空欄"><span class="unit">円／月</span><p class="err" id="hh-spouse-err" role="alert"></p></div>
+          </div>
+          <p class="calc-line" id="hh-i-line" aria-live="polite"></p>
+          <div class="field fcard">
+            <div class="ftext"><label for="hh-entry">入居時にまとめて払うお金</label><p class="sub">入居金・一時金など。必要なければ空欄で構いません。</p></div>
+            <div class="finput"><input id="hh-entry" data-hh="entryBudget" data-unit="man" type="text" inputmode="decimal" autocomplete="off" placeholder="なければ空欄"><span class="unit">万円</span><p class="err" id="hh-entry-err" role="alert"></p></div>
+          </div>
+          <div class="field fcard">
+            <div class="ftext"><label for="hh-support">家族からの援助（月）</label><p class="sub">兄弟姉妹などからの毎月の援助額。通常の結果とは別に、<strong>援助ありの金額</strong>も出します。</p></div>
+            <div class="finput"><input id="hh-support" data-hh="support" data-unit="yen" type="text" inputmode="numeric" autocomplete="off" value="0"><span class="unit">円／月</span><p class="err" id="hh-support-err" role="alert"></p></div>
+          </div>
+        </div>
+        <p class="echo" id="budget-echo"></p>
+      </details>
+      <div class="guide"><p class="guide-say">まずは、分かる金額だけで大丈夫です。</p><img src="src/img/guide-madoguchi.webp" width="320" height="429" alt="案内の女性" loading="lazy" decoding="async"></div>
+      <div class="tool-actions">
+        <a class="btn-cta" href="#h-budget">結果を見る<span class="arr" aria-hidden="true">›</span></a>
+        <div class="actions sub-actions">
+          <button type="button" id="btn-demo" class="ghost">例の数字で試す</button>
+          <button type="button" id="btn-reset" class="ghost">入力した金額を消す</button>
+        </div>
+      </div>
+
+      <div class="tool-out">
+        <h2 id="h-budget" class="res-head"><span class="num">2</span>施設の費用に、月いくらまで出せるか</h2>
+        <div id="budget-result" class="budget-result" aria-live="polite"></div>
+        <div class="guide guide-res"><p class="guide-say">金額を直すと、結果もその場で変わります。もう一度ボタンを押す必要はありません。</p><img src="src/img/guide-madoguchi.webp" width="320" height="429" alt="" loading="lazy" decoding="async"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ad:auto start -->
+<!-- ad:auto end -->
+
+  <section class="next-steps band" aria-labelledby="h-next">
+    <div class="next-head"><h2 id="h-next">予算が分かったら、次はここから</h2></div>
+    <ul class="next-grid">
+      <li><a href="kawasaki.html"><span class="ng-icon" aria-hidden="true"><svg class="ic"><use href="#i-pin"/></svg></span><span class="ng-t"><strong>川崎市の施設を探す</strong><span>区ごとの施設数と、予算以内の施設数を確認できます。</span></span><span class="arr" aria-hidden="true">›</span></a></li>
+      <li><a href="#h-ask"><span class="ng-icon" aria-hidden="true"><svg class="ic"><use href="#i-list"/></svg></span><span class="ng-t"><strong>見学で聞くことを確認する</strong><span>そのまま印刷して持っていける質問を10個まとめました。</span></span><span class="arr" aria-hidden="true">›</span></a></li>
+      <li><a href="#h-quotes"><span class="ng-icon" aria-hidden="true"><svg class="ic"><use href="#i-compare"/></svg></span><span class="ng-t"><strong>施設の見積もりを比べる</strong><span>2施設まで、月額のほかにかかる費用も並べて見られます。</span></span><span class="arr" aria-hidden="true">›</span></a></li>
+      <li><a href="#h-relief"><span class="ng-icon" aria-hidden="true"><svg class="ic"><use href="#i-people"/></svg></span><span class="ng-t"><strong>費用が軽くなる<span class="nw">制度を調べる</span></strong><span>食費・部屋代などの負担と、どこに聞けばよいかを確認できます。</span></span><span class="arr" aria-hidden="true">›</span></a></li>
+    </ul>
+  </section>
+
+  <section class="step" aria-labelledby="h-ask">
+    <figure class="illust illust-wide"><img src="src/img/kengaku-junbi.webp" width="640" height="474" alt="出かける前に、質問の紙をバッグに入れる娘" loading="lazy" decoding="async"></figure>
+    <h2 id="h-ask"><span class="num">3</span>見学で聞いておきたいこと</h2>
+    <p class="hint">施設に電話した時や見学に行った時、確認しておきたいことを10個にまとめました。印刷して持っていけます。見積もりをもらう前でも使えます。</p>
+    <div class="actions">
+      <button type="button" data-print="checklist">質問リストを印刷する</button>
+      <button type="button" class="ghost" data-preview="checklist">印刷する紙を先に見る</button>
+    </div>
+    <details class="fold">
+      <summary>10個の質問を見る</summary>
+      <div id="checklist"></div>
+    </details>
+  </section>
+
+  <section class="step quotes band" aria-labelledby="h-quotes">
+    <h2 id="h-quotes"><span class="num">4</span>施設の見積もりを比べる</h2>
+    <p class="hint">見積書をもらったら、ここへ金額を入れてみてください。毎月かかる費用をまとめて、先ほど計算した予算と比べられます。</p>
+    <details id="quotes">
+      <summary>見積もりを入力する</summary>
+      <p class="hint">2施設まで。費用ごとに<strong>「月額に含む」「別料金」「まだ不明」</strong>を選びます。最初はすべて「まだ不明」です。</p>
+      <div id="facilities"></div>
+      <button type="button" id="btn-add" class="ghost">2つ目の施設を追加</button>
+      <h3 id="h-res" class="res-title">見積もりの結果</h3>
+      <div id="result" aria-live="polite"></div>
+      <h3>家族で相談する時や、施設に確認する時に</h3>
+      <p class="hint">「家族用」には、収入・貯金などの家計の金額も載ります。「施設確認用」には家計の金額を載せず、まだ分からない費用を施設に書き込んでもらえます。</p>
+      <div class="actions">
+        <button type="button" data-print="family">家族用を印刷</button>
+        <button type="button" data-print="facility">施設確認用を印刷</button>
+      </div>
+      <div class="actions">
+        <button type="button" class="ghost" data-preview="family">家族用を画面で見る</button>
+        <button type="button" class="ghost" data-preview="facility">施設確認用を画面で見る</button>
+      </div>
+      <p class="sub">共用のパソコンでは、PDFの保存先にご注意ください。</p>
+    </details>
+  </section>
+
+  <section class="step words-sec" aria-labelledby="h-words">
+    <p class="kicker">初めて施設を探す方へ</p>
+    <h2 id="h-words">施設の種類と、よく出てくる言葉</h2>
+    <p class="hint">名前を見ただけでは違いが分かりにくい施設や制度を、短くまとめました。気になるところだけ開いて読めます。</p>
+<!-- words:cards tokuyo,kaigo,jutaku,satsuki,gh,roken,youkaigo,hosoku start -->
+<ul class="words"><li class="word is-place" data-k="tokuyo"><h3>特別養護老人ホーム（特養）</h3><p>介護が多く必要になった方が暮らす、介護保険の施設です。原則、要介護3以上の方が対象です。</p><details class="fold"><summary>特徴と費用を見る</summary><p>費用は民間の有料老人ホームより抑えられる傾向がありますが、空きを待つ場合もあります。申し込んだ順に入れるとは限りません。</p></details></li><li class="word is-place" data-k="kaigo"><h3>介護付き有料老人ホーム</h3><p>施設の職員から介護を受けながら暮らす、民間の老人ホームです。</p><details class="fold"><summary>特徴と費用を見る</summary><p>介護保険の自己負担は、要介護度によって変わります。月額に含まれるかは施設ごとに違うので、確認してください。</p></details></li><li class="word is-place" data-k="jutaku"><h3>住宅型有料老人ホーム</h3><p>食事や日常生活の手助けを受けながら暮らせる、民間の老人ホームです。</p><details class="fold"><summary>特徴と費用を見る</summary><p>介護が必要な場合は、訪問介護など外部のサービスを別に契約します。介護保険を使った分の自己負担は、施設の月額とは別にかかります。</p></details></li><li class="word is-place" data-k="satsuki"><h3>サービス付き高齢者向け住宅（サ高住）</h3><p>安否確認や生活相談のサービスが付いた、高齢者向けの賃貸住宅です。</p><details class="fold"><summary>特徴と費用を見る</summary><p>介護は外部のサービスを利用する形が基本で、利用した分は別料金です。なかには、施設の職員による介護を受けられる住まいもあります。</p></details></li><li class="word is-place" data-k="gh"><h3>グループホーム（認知症の方の共同生活）</h3><p>認知症の方が、職員の手を借りながら少人数で一緒に暮らす施設です。</p><details class="fold"><summary>特徴を見る</summary><p>1か所5〜9人で暮らします。原則として、施設のある市区町村に住民登録のある方が対象です。</p></details></li><li class="word is-place" data-k="roken"><h3>介護老人保健施設（老健）</h3><p>退院後などにリハビリを受け、家での暮らしに戻ることを目指す介護保険の施設です。</p><details class="fold"><summary>特徴を見る</summary><p>長く暮らす住まいというより、自宅へ戻るまでの期間に利用する施設です。</p></details></li><li class="word" data-k="youkaigo"><h3>要介護度</h3><p>日常生活で、どの程度の介護が必要かを表す区分です。</p><details class="fold"><summary>意味を見る</summary><p>要支援1・2、要介護1〜5の7段階。数字が大きいほど介護が多く必要です。市区町村に申請して認定を受けます。</p></details></li><li class="word is-money" data-k="hosoku"><h3>補足給付（負担限度額認定）</h3><p>収入や貯金によって、食費や部屋代が安くなる場合があります。</p><details class="fold"><summary>意味を見る</summary><p>対象は特養・老健・介護医療院・ショートステイです。市区町村に申請して認定を受けます。有料老人ホームやグループホームは対象になりません。</p></details></li></ul>
+<!-- words end -->
+  </section>
+
+  <section class="step band" aria-labelledby="h-relief">
+    <h2 id="h-relief"><span class="num">5</span>食費や部屋代の負担が<wbr>軽くなる場合があります</h2>
+    <p><strong>特養などでは、収入や貯金によって食費・部屋代が安くなる場合があります。</strong>対象になるかは、市区町村の介護保険窓口か地域包括支援センターで確認できます。</p>
+    <p><a href="https://www.kaigokensaku.mhlw.go.jp/" target="_blank" rel="noopener noreferrer">全国の介護施設・サービスを調べる（厚生労働省「介護サービス情報公表システム」）</a></p>
+  </section>
+
+  <section class="step" aria-labelledby="h-method">
+    <h2 id="h-method">月の金額の出し方</h2>
+    <figure class="calc-figure" aria-label="計算の順番">
+      <div class="cf-row">
+        <span class="cf-box">毎月の手取り（年金など）</span><span class="cf-op">＋</span><span class="cf-box">介護に使えるお金 ÷ <span class="nw">選んだ年数の月数</span></span>
+      </div>
+      <div class="cf-arrow" aria-hidden="true">↓</div>
+      <div class="cf-row"><span class="cf-box cf-main">介護にかけられるお金（月）</span></div>
+      <div class="cf-arrow" aria-hidden="true">↓ 病院代・薬代・おむつ代など（月）を引く</div>
+      <div class="cf-row"><span class="cf-box cf-main">施設の費用に使える金額（月）</span></div>
+      <figcaption>手元に残すお金と入居時のお金は、貯金から先に引きます。家族の生活費は、毎月の手取りから先に確保します。</figcaption>
+    </figure>
+    <p>例：年金が月15万円、介護に使えるお金が800万円なら、10年分で<strong>月約21.7万円</strong>。<br>※病院代などを引く前の金額です。</p>
+    <details class="fold">
+      <summary>施設や窓口で、もう少し確認したいこと</summary>
+      <ol>
+        <li><strong>食費・部屋代の補足給付（負担限度額認定）や高額介護サービス費。</strong><br>対象になるかは、市区町村の介護保険窓口へ。</li>
+        <li><strong>入居時に払ったお金は、退去時にいくら戻る？</strong><br>入居時に支払うお金は、退去する時に一部が戻る場合があります。金額や返金の条件は施設に確認できます。</li>
+        <li><strong>この先、料金が上がる予定はある？</strong><br>今後の値上げについても、施設に予定を聞いておくと安心です。</li>
+        <li><strong>本人が安心して暮らせそう？</strong><br>職員の体制、食事、本人の希望などは見学で確かめられます。</li>
+        <li><strong>身元保証の費用や入居金の償却は？</strong><br>金額と、何年で戻らなくなるかを施設に確認。見学の質問リストにもあります。</li>
+      </ol>
+    </details>
+    <details class="fold">
+      <summary>計算式まで詳しく見る</summary>
+      <div id="method"></div>
+    </details>
+  </section>
+
+  <nav class="more-q band" aria-labelledby="h-more-q">
+    <h2 id="h-more-q">ほかにも確認できます</h2>
+    <ul>
+      <li><a href="kawasaki.html"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><span>川崎市の老人ホーム・介護施設の費用と、区ごとの<span class="nw">施設の数</span></span><span class="arr" aria-hidden="true">›</span></a></li>
+      <li><a href="nokoru-kazoku.html"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg><span>夫婦の一人が施設に入る時、<span class="nw">家の生活費は</span><span class="nw">いくら残せる？</span></span><span class="arr" aria-hidden="true">›</span></a></li>
+      <li><a href="chokin-nannen.html"><svg class="ic" aria-hidden="true"><use href="#i-coins"/></svg><span>貯金で施設の費用を<span class="nw">何年分払える？</span> 早見表</span><span class="arr" aria-hidden="true">›</span></a></li>
+      <li><a href="harae-naku-naru.html"><svg class="ic" aria-hidden="true"><use href="#i-cal"/></svg><span>今の費用なら、貯金で<span class="nw">いつごろまで払える？</span></span><span class="arr" aria-hidden="true">›</span></a></li>
+    </ul>
+  </nav>
+
+  <aside class="about-site" id="about-site" aria-labelledby="h-about-site">
+    <h2 id="h-about-site">このサイトについて</h2>
+    <p>老人ホームなどの費用と、家で暮らす家族の生活費。両方を見ながら、無理のない予算を考えるためのサイトです。ご家族で相談する時にも使えるよう、月々の金額や見積もりを並べて確認できます。運営はB.B.Tです（<a href="operator.html">運営者情報</a>）。</p>
+    <p class="note">表示額は入力した金額から出した目安です。実際の料金は施設へ、制度の対象になるかは市区町村の窓口へ。</p>
+  </aside>
+
+  <footer class="foot"><p>施設のお金を整理する</p><p>運営：B.B.T　お問い合わせ：<a class="nw" href="mailto:kaigo@bibon.net">kaigo@bibon.net</a></p><p class="foot-links"><a href="operator.html">運営者情報</a>　<a href="privacy.html">プライバシーポリシー</a></p></footer>
+</div>
+
+<div id="print-sheet" class="sheet" aria-hidden="true"></div>
+<div class="preview-bar" id="preview-bar" hidden>
+  <span id="preview-title"></span>
+  <button type="button" id="btn-preview-print">この紙を印刷</button>
+  <button type="button" id="btn-preview-close" class="ghost">閉じる</button>
+</div>
+
+<template id="tpl-facility">
+  <article class="facility card" data-fac>
+    <div class="fac-head">
+      <h3 class="fac-title"></h3>
+      <button type="button" class="ghost small" data-remove>この施設を外す</button>
+    </div>
+    <div class="grid">
+      <div class="field">
+        <label>施設の名前<span class="unit">好きな呼び名でもOK</span></label>
+        <input data-f="name" type="text" autocomplete="off" maxlength="20">
+      </div>
+      <div class="field">
+        <label>見積もりの日付</label>
+        <input data-f="quoteDate" type="date">
+      </div>
+      <div class="field">
+        <label>見積書の月額（税込）<span class="unit">円／月</span></label>
+        <input data-f="monthlyQuote" data-unit="yen" type="text" inputmode="numeric" autocomplete="off" placeholder="例：180000">
+        <p class="err" role="alert"></p>
+      </div>
+      <div class="field">
+        <label>入居時にまとめて払うお金<span class="unit">万円</span></label>
+        <input data-f="entryFee" data-unit="man" type="text" inputmode="decimal" autocomplete="off" placeholder="なければ0">
+        <p class="sub">あとから一部が戻る場合でも、最初に支払う全額を入力してください。</p>
+        <p class="err" role="alert"></p>
+      </div>
+    </div>
+    <h4>毎月の料金には、何が含まれていますか？</h4>
+    <div class="items"></div>
+  </article>
+</template>
+
+<template id="tpl-item">
+  <div class="item" data-item>
+    <div class="item-row">
+      <label class="item-label"></label>
+      <select data-i="inclusion">
+        <option value="unknown">まだ不明</option>
+        <option value="included">月額に含む</option>
+        <option value="separate">別料金</option>
+      </select>
+    </div>
+    <div class="item-sep" hidden>
+      <div class="field">
+        <label class="amt-label">月にかかる金額<span class="unit">円／月</span></label>
+        <input data-i="amount" data-unit="yen" type="text" inputmode="numeric" autocomplete="off" placeholder="分からなければ空欄">
+        <p class="err" role="alert"></p>
+      </div>
+      <div class="field visits" hidden>
+        <label>月に何回くらい？<span class="unit">回</span></label>
+        <input data-i="visits" data-unit="yen" type="text" inputmode="numeric" autocomplete="off" placeholder="分からなければ空欄">
+        <p class="err" role="alert"></p>
+      </div>
+      <div class="field">
+        <label>多い月の金額<span class="unit">円／月（月によって変わる時だけ）</span></label>
+        <input data-i="amountHigh" data-unit="yen" type="text" inputmode="numeric" autocomplete="off">
+        <p class="err" role="alert"></p>
+      </div>
+      <div class="field">
+        <label>この金額はどこから？</label>
+        <select data-i="certainty">
+          <option value="confirmed">見積書・施設に確認した額</option>
+          <option value="provisional">まだ仮に入れた額</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script src="src/calc/core.js"></script>
+<script src="src/ui/report.js"></script>
+<script src="src/ui/demo.js"></script>
+<script src="src/ui/app.js"></script>
+</body>
+</html>
