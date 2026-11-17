@@ -1,0 +1,15 @@
+/* 川崎市の区のページ（下書き・_draft/kawasaki-<区>.html）だけの見た目。共通の style.css の後に読む。
+   決まりは design_note_20261016.md（文字の床 17/15px・余白・色）のまま。ここで足すのは区のページの部品だけ */
+@media screen {
+  .ward-facts { padding-left: 1.3em; max-width: 40em; }
+  .ward-facts li { margin: .5em 0; }
+  .ward-go { margin: 20px 0 28px; }
+  .kw-within[hidden], .ward-after[hidden] { display: none; }
+  .kw-within p { margin: 0; }
+  .kw-within p + p { margin-top: .6em; }
+  .kw-within .note { font-weight: 400; }
+  .ward-after { margin-top: 24px; max-width: 40em; }
+  .ward-who { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; margin: 0 0 8px; }
+  .ward-who > span { font-weight: 700; color: var(--ai); border: 1px solid var(--ai-line); border-radius: 2px; padding: 0 8px; }
+  .rule > p { max-width: 40em; }
+}
